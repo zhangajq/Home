@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kyle Zhang</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.5.0/js/bootstrap-datepicker.min.js"></script> -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.15/js/bootstrap-multiselect.min.js"></script>
+    <!-- <script type="text/javascript" src="https://cdn.datatables.net/v/dt/jszip-2.5.0/dt-1.10.24/b-1.7.0/b-colvis-1.7.0/b-html5-1.7.0/b-print-1.7.0/datatables.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/fixedcolumns/3.3.2/js/dataTables.fixedColumns.min.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.36/pdfmake.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.36/vfs_fonts.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.1/xlsx.full.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.33/moment-timezone-with-data.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.8.0"></script> -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.5.0/css/bootstrap-datepicker3.css"/> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.15/css/bootstrap-multiselect.css"/>
+    <!-- <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/jszip-2.5.0/dt-1.10.24/b-1.7.0/b-colvis-1.7.0/b-html5-1.7.0/b-print-1.7.0/datatables.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/fixedcolumns/3.3.2/css/fixedColumns.dataTables.min.css"/> -->
+    <style>
+        <!-- .centre { text-align: center;} -->
+        tr, td {
+          padding-right:    25px;
+          padding-bottom:   10px;
+        }
+    </style>
+</head>
+<body>
+    <div class ="container half-width">
+        <br>
+        <table>
+            <tr>
+                <td><img src="profile pic.png" width="200px" height="200px"></td>
+                <td>
+                    <h2>Kyle Zhang</h2>
+                    <p>
+                        Charlotte, NC | 917.589.3204 | zhangajq@gmail.com | <a href="https://www.linkedin.com/in/zhang-kyle/" target="_blank">
+                        <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" width="15px" height="15px"></a>
+                    </p>
+                </td>
+            </tr>
+        </table>
+        <!-- <div class="centre">
+            <a href="https://www.linkedin.com/in/zhang-kyle/" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" width="20px" height="20px"></a>
+            <a href="https://www.instagram.com/kykyzhang/" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" width="20px" height="20px"></a>
+        </div> -->
+        <ul class="nav nav-tabs">
+            <li class="active"><a data-toggle="tab" href="#home">About Me</a></li>
+            <li><a data-toggle="tab" href="#bana">Past Works</a></li>
+            <li><a data-toggle="tab" href="#liquidity">More Past Works</a></li>
+        </ul>
+        <div class="tab-content">
+
+        <div id="home" class="tab-pane fade in active">
+            <h3><strong>Work Experience</strong></h3>
+            <p><strong>Bank of America</strong></p>
+            <p><em>Assistant Vice President - Bank Funding Trader</em><span style="float:right;">June 2022 - Present</span></p>
+            <ul>
+                <li>Led design, testing, and deployment of 20+ technology solutions for US Position Management Desk,
+                optimizing desk functions, analyses, and decision making</li>
+                <li>Developed front-end code and back-end logic for 7 responsive dashboards, 6 automated email reports,
+                and various data pipelines essential to funding desk, cash management, and treasury operations</li>
+                <li>Built real-time monitoring process for intraday liquidity usage at 5 US & EMEA broker/dealers, resulting
+                in ~1100 hours saved annually across 5 Treasury teams, 3 manual processes eliminated, and 4 automated
+                email reports</li>
+                <li>Designed a reporting dashboard that informed the funding desk on bank, parent company, and US
+                broker/dealer positions, providing key metrics and tools for ad-hoc analyses and decision-making</li>
+                <li>Built a dashboard, leveraging deposit/loan data, for visualizing and analyzing daily trends in
+                deposits/loans, forecast misses and changes, and key drivers by LOB</li>
+                <li>Created automated emails, leveraging wire/ach data, summarizing large customer deposit moves by type,
+                counterparty, and industry</li>
+            </ul>
+            <p><em>Assistant Vice President - Quantitative Services Professional</em><span style="float:right;">December 2021 - June 2022</span><br>
+            <em>Contractor - Software Engineer</em><span style="float:right;">October 2020 - December 2021</span></p>
+            <ul>
+                <li>Built a web-based platform to host a dependable and flexible view and analysis tool for managing
+                international currency funding risk across 3 regions, 47 banking entities, and 20 currencies, resulting in
+                ~6000 people hours saved, 131 Excel files retired, and 196 data sources consolidated</li>
+                <li>Automated 5 global funding reporting processes, including deposit and loan concentration analysis,
+                regional funding allocation reporting, resulting in significantly reduced time spent on manual tasks</li>
+                <li>Redesigned and migrated 5 Tableau dashboards to single robust web platform, standardizing and
+                consolidating treasury reporting</li>
+                <li>Collaborated with Treasury and Risk to reconcile duration risk model, investigate discrepancies, and
+                adjust underlying assumptions in risk calculation across various products</li>
+            </ul>
+
+            <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+
+            <h3><strong>Skills</strong></h3>
+            <table>
+                <tr>
+                    <td>HTML</td>
+                    <td>CSS</td>
+                    <td>Javascript</td>
+                </tr>
+                <tr>
+                    <td>Bootstrap</td>
+                    <td>jQuery</td>
+                    <td>AJAX</td>
+                </tr>
+                <tr>
+                    <td>Python</td>
+                    <td>Oracle</td>
+                    <td>REST</td>
+                </tr>
+            </table>
+
+            <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+
+            <h3><strong>Education</strong></h3>
+            <p>
+                Boston College, Wallace E. Carroll School of Management<span style="float:right;">May 2020</span><br>
+                <em>Bachelor of Science in Management, Concentration in Finance and Information System</em>
+            </p>
+            <p>
+                University of Hong Kong<span style="float:right;">Jan 2019 - May 2019</span><br>
+                <em>Exchange Student</em>
+            </p>
+
+
+        </div>
+
+        <div id="bana" class="tab-pane fade">
+            <br>
+            <label>Bank Funding Update for MM/DD/YYYY</label>
+                <div  class = "row">
+
+                    <div class = "col-md-5">
+                        <div class="panel panel-default">
+                            <div class="panel-body">
+                                <div>&nbsp;</div>
+                                <div class='col-md-12' style="padding-left: 15px !important;">
+                                    <div class='col-md-5'>
+                                        <label>Start COB</label>&nbsp;
+                                        <input type="date" id="start_date" class="form-control" onchange="update_bana()">
+                                    </div>
+                                    <div class='col-md-5'>
+                                        <label>End COB</label>&nbsp;
+                                        <input type="date" id="end_date" class="form-control" onchange="update_bana()">
+                                    </div>
+                                </div>
+                                <div class='col-md-12' style="padding-left: 15px">
+                                    <div>&nbsp;</div>
+                                    <div class="col-md-12 border-0" id="CSH_POS" style="padding-left: 15px !important;"></div>
+                                    <div class="col-md-12 border-0" id="LIQ_POS" style="padding-left: 15px !important;"></div>
+                                    <div class = "col-md-12 border-0">
+                                        <label class="radio-inline"><input type="radio" onchange="changefilter()" name="cashliq" value="cash" checked>Cash</label>
+                                        <label class="radio-inline"><input type="radio" onchange="changefilter()" name="cashliq" value="liquidity">Liquidity</label>
+                                    </div>
+                                    <div class="col-md-12 border-0" id="DRIVERS" style="padding-left: 15px !important;"></div>
+                                    <div class="col-md-12 border-0" style="padding-left: 15px !important;margin-top:0px">
+                                        *Wholesale section inclusive in intercompany Repo/Reverse
+                                    </div>
+                                </div>
+                                <div class = "col-md-12" id="ccy_holder" style="margin-left:15px">
+                                    <div>&nbsp;</div>
+                                    <select id="driver_filter" multiple="multiple">
+                                        <option selected="selected">Client Deposits</option>
+                                        <option>Client Loans</option>
+                                        <option>CIG Portfolio</option>
+                                        <option>Wholesale - Unsecured Issuance</option>
+                                        <option>Wholesale - FHLB</option>
+                                        <option>Wholesale - Repo/Reverse Repo</option>
+                                        <option>Wholesale - Securitization</option>
+                                        <option>I/C - AMRS</option>
+                                        <option>I/C - APAC</option>
+                                        <option>I/C - EMEA</option>
+                                        <option>Equities/Margin - Equities</option>
+                                        <option>Equities/Margin - Margin</option>
+                                        <option>Equities/Margin - Futures Activity</option>
+                                        <option>BANA Flows to Parent</option>
+                                        <option>Parent USD Cash</option>
+                                        <option>Other</option>
+                                    </select>&emsp;
+                                    <script>
+                                    $('#driver_filter').multiselect({
+                                        buttonWidth: '40%',
+                                        includeSelectAllOption: true,
+                                        maxHeight: 400,
+                                        onChange: function(element, checked) {
+                                            update_driver_trends()
+                                        },
+                                        onSelectAll: function() {
+                                            update_driver_trends()
+                                        },
+                                    });
+                                    </script>
+                                </div>
+                                <div class='col-md-12' style="padding-left: 15px !important;">
+                                    <div  class = "chart-container" id = "waterfallContainer2">
+                                        <canvas id="WATERFALL2"></canvas>
+                                    </div>
+                                </div>
+                                <div class='col-md-12' style="padding-left: 15px;margin-top:20px">
+                                    <div class="col-md-12 border-0" id="BUY" style="padding-left: 15px !important;"></div>
+                                    <div>&nbsp;</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class = "col-md-7" style="">
+                        <div class="panel panel-default">
+                            <div class="panel-body">
+                                <div class='col-md-12' style="padding-left: 15px">
+                                    <div>&nbsp;</div>
+                                    <div class="col-md-12 border-0" id="INTERCO" style="padding-left: 15px !important;"></div>
+                                    <div class='col-md-12' style="padding-left: 15px !important;">
+                                        <div  class = "chart-container" id = "waterfallContainer">
+                                            <canvas id="WATERFALL"></canvas>
+                                        </div>
+                                    </div>
+                                    <div class='col-md-12' style="padding-left: 15px !important;">
+                                        <div  class = "chart-container" id = "afsContainer">
+                                            <canvas id="AFS"></canvas>
+                                        </div>
+                                    </div>
+                                    <div>&nbsp;</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row">
+
+                    <div class = "col-md-12">
+                        <div class="panel panel-default">
+                            <div class="panel-body">
+                                <div class='col-md-12' style="margin-top:20px">
+                                    <div class='col-md-3'>
+                                        <label>Prior Date</label>&nbsp;
+                                        <input type="date" id="forecast_date2" class="form-control" onchange="update_bana(input_date,true)">
+                                    </div>
+                                    <div class='col-md-3'>
+                                        <label>Compare Date</label>&nbsp;
+                                        <input type="date" id="forecast_date1" class="form-control" onchange="update_bana(input_date,true)">
+                                    </div>
+                                    <div class='col-md-3' id="banascob">
+                                        <label>Chart Range Start Date</label>&nbsp;
+                                        <input type="date" id="bana_fcst_start_date" class="form-control"  onchange="update_bana(input_date,true)">
+                                    </div>
+                                    <div class='col-md-3' id="banaecob">
+                                        <label>Chart Range End Date</label>&nbsp;
+                                        <input type="date" id="bana_fcst_end_date" class="form-control"  onchange="update_bana(input_date,true)">
+                                    </div>
+                                    <div class='col-md-3' style="margin-top:25px" id="button">
+                                        <button class="btn btn-ct btn-md btn-hover" onclick="clear_dates('bana')">Clear Dates</button>
+                                    </div>
+                                </div>
+                                <div class="col-md-6" style="margin-top:10px;margin-left:20px">
+                                    <input type="checkbox" id="addLegend">
+                                    <script>
+                                        $("#addLegend").change( function(element) { update_bana(input_date,true) });
+                                    </script>
+                                    <label>Display legend</label>&nbsp;
+                                </div>
+                                <div class='col-md-12' style="padding-left: 15px !important;">
+                                    <div  class = "chart-container" id = "chartContainer">
+                                        <canvas id="CASH"></canvas>
+                                    </div>
+                                </div>
+                                <div class='col-md-12' style="padding-left: 15px !important;">
+                                    <div  class = "chart-container" id = "liqContainer">
+                                        <canvas id="LIQ_FORECAST"></canvas>
+                                    </div>
+                                </div>
+                                <div class = "col-md-12" id="wholesale_holder">
+                                    <div>&nbsp;</div>
+                                    <select id="wholesale_filter" multiple="multiple">
+                                        <option selected="selected">BN/CDS</option>
+                                        <option selected="selected">FHLB</option>
+                                        <option selected="selected">GNMA</option>
+                                        <option>Institutional</option>
+                                        <option selected="selected">MBS</option>
+                                        <option>Intercompany</option>
+                                        <option selected="selected">Securitization</option>
+                                        <option selected="selected">UST</option>
+                                    </select>&emsp;
+                                    <script>
+                                    $('#wholesale_filter').multiselect({
+                                        buttonWidth: '20%',
+                                        includeSelectAllOption: true,
+                                        maxHeight: 400,
+                                        onChange: function(element, checked) {
+                                            update_bana(input_date,true)
+                                        },
+                                        onSelectAll: function() {
+                                            update_bana(input_date,true)
+                                        },
+                                    });
+                                    </script>
+                                </div>
+                                <div class = "col-md-12 border-0" style="margin-left:10px;margin-top:10px">
+                                    <label class="radio-inline"><input type="radio" onchange="update_bana(input_date,true)" name="wf_view" value="book" checked>Wholesale Book</label>
+                                    <label class="radio-inline"><input type="radio" onchange="update_bana(input_date,true)" name="wf_view" value="repos">Repo/Reverses</label>
+                                    <label class="radio-inline" style="margin-left:300px"><input type="radio" onchange="update_bana(input_date,true)" name="gls_view" value="gls" checked>GLS</label>
+                                    <label class="radio-inline"><input type="radio" onchange="update_bana(input_date,true)" name="gls_view" value="mbs">L1/L2 MBS</label>
+                                </div>
+                                <div class='col-md-6' style="padding-left: 15px !important;">
+                                    <div  class = "chart-container" id = "repoContainer">
+                                        <canvas id="TRD_PTY_RPO"></canvas>
+                                    </div>
+                                </div>
+                                <div class='col-md-6' style="padding-left: 15px !important;">
+                                    <div  class = "chart-container" id = "glsContainer">
+                                        <canvas id="GLS"></canvas>
+                                    </div>
+                                </div>
+                                <div class='col-md-12' style="padding-left: 15px !important;">
+                                    <div  class = "chart-container" id = "lcrContainer">
+                                        <canvas id="LCR_ILST"></canvas>
+                                    </div>
+                                </div>
+                                <div class='col-md-12' style="padding-left: 15px !important;">
+                                    <div  class = "chart-container" id = "l2Container">
+                                        <canvas id="L2_DISALLOW"></canvas>
+                                    </div>
+                                </div>
+                                <div class="col-md-12" style="padding-left: 15px !important;">
+                                    <br><br>
+                                </div>
+
+                                <div class = "row">
+                                    <!-- Modal start -->
+                                        <div id="bana_analysis_details_modal" class="modal fade" role="dialog" tabindex="-1">
+                                            <div class="modal-dialog modal-lg" role="document" style="width:800px!important;">
+                                            <!-- Modal content-->
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <button type="button" class="close" onclick="" data-dismiss="modal">&times;</button>
+                                                        <h4 class="modal-title" id="bana_analysis_details_modal_title">BANA Forecast Breakdown</h4>
+                                                        <div class="lds-circle" id='loader_analysis'><div></div></div>
+                                                    </div>
+                                                    <div class='col-md-12' style="padding-left: 15px !important;display:none">
+                                                        <div class='col-md-2'>
+                                                            <label>Start COB</label>&nbsp;
+                                                            <input type="date" id="bana_trend_start" class="form-control" disabled>
+                                                        </div>
+                                                        <div class='col-md-2'>
+                                                            <label>End COB</label>&nbsp;
+                                                            <input type="date" id="bana_trend_end" class="form-control" disabled>
+                                                        </div>
+                                                    </div>
+                                                    <div class="modal-body" id="bana_analysis_details_modal_body" style="overflow-x: auto !important;">
+                                                        <div class="container-fluid">
+                                                            <div class = "col-md-12" style="float:none;margin:auto;">
+                                                                <div class="col-md-11" id="bana_analysis_drilldown" style="overflow-x: auto !important;">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    <!-- Modal end -->
+                                </div>
+
+                                <div class = "row">
+                                    <!-- Modal start -->
+                                        <div id="other_interco_details_modal" class="modal fade" role="dialog" tabindex="-1">
+                                            <div class="modal-dialog modal-lg" role="document" style="width:800px!important;">
+                                            <!-- Modal content-->
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <button type="button" class="close" onclick="" data-dismiss="modal">&times;</button>
+                                                        <div class="lds-circle" id='loader_other'><div></div></div>
+                                                    </div>
+                                                    <div class="modal-body" id="other_interco_details_modal_body" style="overflow-x: auto !important;">
+                                                        <div class="container-fluid">
+                                                            <div class = "col-md-12" style="float:none;margin:auto;">
+                                                                <div class="col-md-12" id="other_interco_drilldown" style="overflow-x: auto !important;">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    <!-- Modal end -->
+                                </div>
+
+
+                                <div class = "row">
+                                    <!-- Modal start -->
+                                        <div id="bana_interco_details_modal" class="modal fade" role="dialog" tabindex="-1">
+                                            <div class="modal-dialog modal-lg" role="document" style="width:800px!important;">
+                                            <!-- Modal content-->
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <button type="button" class="close" onclick="" data-dismiss="modal">&times;</button>
+                                                        <div class="lds-circle" id='loader_interco'><div></div></div>
+                                                    </div>
+                                                    <div class="modal-body" id="bana_interco_details_modal_body" style="height:900px;overflow-x: auto !important;">
+                                                        <div class="container-fluid">
+                                                            <div class = "col-md-12" style="float:none;margin:auto;">
+                                                                <div class="col-md-12" id="interco_drilldown" style="overflow-x: auto !important;">
+                                                                </div>
+                                                            </div>
+                                                            <div class = "col-md-12" id="ccy_holder2" style="margin-left:15px">
+                                                                <select id="ccy_filter" multiple="multiple">
+                                                                    <option selected="selected">AUD</option><option selected="selected">BRL</option><option selected="selected">CAD</option>
+                                                                    <option selected="selected">CHF</option><option selected="selected">CNY</option><option selected="selected">EUR</option>
+                                                                    <option selected="selected">GBP</option><option selected="selected">HKD</option><option selected="selected">IDR</option>
+                                                                    <option selected="selected">INR</option><option selected="selected">JPY</option><option selected="selected">KRW</option>
+                                                                    <option selected="selected">MXN</option><option selected="selected">MYR</option><option selected="selected">NZD</option>
+                                                                    <option selected="selected">PHP</option><option selected="selected">SGD</option><option selected="selected">THB</option>
+                                                                    <option selected="selected">TWD</option><option selected="selected">USD</option>
+                                                                </select>&emsp;
+                                                                <script>
+                                                                $('#ccy_filter').multiselect({
+                                                                    buttonWidth: '30%',
+                                                                    includeSelectAllOption: true,
+                                                                    maxHeight: 400,
+                                                                    onChange: function(element, checked) {
+                                                                        show_interco_details(enty,'Balance','',false)
+                                                                    },
+                                                                    onSelectAll: function() {
+                                                                        show_interco_details(enty,'Balance','',false)
+                                                                    },
+                                                                });
+                                                                </script>
+                                                            </div>
+                                                            <div class = "col-md-12"><br></div>
+                                                            <div class = "col-md-12" style="float:none;margin:auto;">
+                                                                <div class="col-md-12" id="interco_drilldown2" style="overflow-x: auto !important;">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    <!-- Modal end -->
+                                </div>
+
+                                <div class = "row">
+                                    <!-- Modal start -->
+                                        <div id="more_interco_details_modal" class="modal fade" role="dialog" tabindex="-1">
+                                            <div class="modal-dialog modal-lg" role="document" style="width:800px!important;">
+                                            <!-- Modal content-->
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <button type="button" class="close" onclick="" data-dismiss="modal">&times;</button>
+                                                        <div class="lds-circle" id='loader_more'><div></div></div>
+                                                    </div>
+                                                    <div class="modal-body" id="more_interco_details_modal_body" style="overflow-x: auto !important;">
+                                                        <div class="container-fluid">
+                                                            <div class = "col-md-12" style="float:none;margin:auto;">
+                                                                <div class="col-md-12" id="more_interco" style="overflow-x: auto !important;">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    <!-- Modal end -->
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+        </div>
+        </div>
+
+    </div>
+    <script>
+        function updateChartHTML(cache_url, title){
+            $.ajax({dataType: "json",
+                 url: cache_url,
+                 chartTitle: title,
+                 xhrFields: {withCredentials: true},
+                 retryLimit : 3.,
+                 tryCount : 0,
+                 success:
+                     function( data )  {
+
+                        var key = this.chartTitle
+                        var chartContent = document.getElementById(chartDict[key]['container'])
+                        chartContent.innerHTML = '';
+                        var d_url = this.url + "&format=csv" + "&as_attachment=True"
+                        if ( $('#addLegend').is(":checked") ) {
+                            chartDict.GLS.style = 'height="275" width="500"';
+                            chartDict.TRD_PTY_RPO.style = 'height="255" width="500"'
+                            chartDict.WATERFALL2.style = 'height="400" width="500"'}
+                        else {
+                            chartDict.GLS.style = 'height="225" width="500"';
+                            chartDict.TRD_PTY_RPO.style = 'height="225" width="500"'
+                            chartDict.WATERFALL2.style = 'height="325" width="500"'}
+                       $('#'+chartDict[key]['container']).append('<canvas id="'+key+'" '+chartDict[key]['style']+'></canvas>');
+                        var ctx = document.getElementById(key).getContext('2d');
+
+                        displayLegend = $('#addLegend').is(":checked") | $('#parentAddLegend').is(":checked") ;
+                        gm_usage_checked = $('#gm_chart_cb').is(":checked");
+                        titleName = chartDict[key]['title']
+                        chartType = chartDict[key]['type']
+                        stack = chartDict[key]['stack']
+                        barPercentage = chartDict[key]['barPercentage']
+                        displayLegend = chartDict[key]['displayLegend']
+                        if (displayLegend == undefined) {displayLegend = $('#addLegend').is(":checked") | $('#parentAddLegend').is(":checked");}
+
+                        dictionaryList = []
+                        var xaxis = []
+                        for(var i=0; i<data[0].data.length; i++) {
+                            xaxis.push(data[0].data[i][0])
+                        }
+                        end_dt = xaxis.indexOf($('#end_date').val())
+                        for(var j=1; j<data[0].data[0].length; j++) {
+                            var dict = {}
+                            var legend = data[0].schema[j].colName.split(' - ').slice(-1)[0]
+
+                            var dataList = []
+                            var bkgdColor = []
+                            var bdrColor = []
+                            var pRadius = []
+                            var wVal = 0
+                            var y1_flag=false
+                            for(var i=0; i<data[0].data.length; i++) {
+                                if (['WATERFALL','WATERFALL2','PARENT_WATERFALL','USBD_WATERFALL'].indexOf(key) > -1 ) {
+                                    if (key == 'WATERFALL2') {
+                                        if (!dataList.length) { dataList.push([wVal,wVal]) }
+                                        else {
+                                            dataList.push([wVal,wVal+data[0].data[i][j]])
+                                        }
+                                        bdrColor.push(bdrDict[data[0].schema[j].colName])
+                                        bkgdColor.push(bdrDict[data[0].schema[j].colName])
+                                    }
+                                    else {
+                                        if (i == 0 || i == data[0].data.length-1) {
+                                            dataList.push([0,data[0].data[i][j]])
+                                        }
+                                        else { dataList.push([wVal,wVal+data[0].data[i][j]]) }
+                                        wVal += data[0].data[i][j]
+                                        if (['SOD','EOD','Starting Cash','Ending Cash','Starting Liquidity','Ending Liquidity'].indexOf(xaxis[i]) > -1) { bkgdColor.push('rgba(0, 32, 96, 1)') }
+                                        else if ( (wVal+data[0].data[i][j]) - wVal < 0 ) { bkgdColor.push('rgba(192, 0, 0, 1)') }
+                                        else { bkgdColor.push('rgba(95, 157, 213, 1)') }
+                                    }
+                                }
+                                else {
+                                    dataList.push(data[0].data[i][j])
+                                    if (key == 'GLS' && i > end_dt) {
+                                        bkgdColor.push(bdrDict[data[0].schema[j].colName].replace(', 1)',', 0.5)'))
+                                        bdrColor.push(bdrDict[data[0].schema[j].colName].replace(', 1)',', 0.5)'))
+                                    }
+                                    else if (data[0].schema[j].colName.includes('.Actual') || data[0].schema[j].colName.includes('.Forecast')) {
+                                        bkgdColor.push(bdrDict[j])
+                                        bdrColor.push(bdrDict[j])
+                                    }
+                                    else {
+                                        bkgdColor.push(bdrDict[data[0].schema[j].colName])
+                                        bdrColor.push(bdrDict[data[0].schema[j].colName])
+                                    }
+                                }
+                                pRadius.push(0)
+                            }
+                            if (data[0].schema[j].colName.includes('Total')){
+                                dict.type = 'line'; dict.order = 1
+                            }
+                            else { dict.order = 2 }
+
+                            dict.label = legend;                dict.data = dataList;
+                            dict.backgroundColor = bkgdColor;   dict.borderColor = bdrColor;
+                            dict.lineTension = 0;               dict.fill = false;
+                            dict.pointRadius = pRadius;         dict.pointHitRadius = 5;
+                            dict.barPercentage = barPercentage; dict.spanGaps = true;
+                            dict.yAxisID = 'y';
+                            if (chartType == 'bar' && !data[0].schema[j].colName.includes('Total')) { dict.borderWidth = 0 }
+                            else { dict.borderWidth = 3 }
+
+                            if (['Bottom GM Range','Other BAU Buffer $5B','GM BAU Buffer $15B'].indexOf(data[0].schema[j].colName) > -1) { dict.fill ='-1'; dict.borderWidth = 0 }
+                            else if ('TOTAL GLOBAL CASH'.indexOf(data[0].schema[j].colName) > -1) { dict.fill = true }
+                            else if (['FORECAST','FORECAST2','LCR Forecast','ILST 90 Forecast','Forecast Parent Liq'].indexOf(data[0].schema[j].colName) > -1) { dict.borderDash = [10,5] }
+                            else if (data[0].schema[j].colName.includes('.Forecast')) { dict.borderDash = [10,5] }
+
+                            if (!(data[0].schema[j].colName == 'GM Usage (RHS)' & !gm_usage_checked)) {
+                                if (data[0].schema[j].colName == 'GM Usage (RHS)' & gm_usage_checked) {
+                                    dict.yAxisID = 'y1'
+                                    y1_flag = true
+                                    }
+                                dictionaryList.push(dict)
+                            }
+
+                        }
+
+                        xy = {
+                            y: {
+                                stacked: stack,
+                                position:'left',
+                                ticks: {
+                                    userCallback: function(value, index, values) {
+                                    value = value.toString();
+                                    if (!value.includes('.')) {
+                                        value = value.split(/(?=(?:...)*$)/);
+                                        value = value.join(',');
+                                    }
+                                    value = value.replace('-,','-')
+                                    return value;
+                                },
+                                    beginAtZero: false
+                                }
+                            },
+                            x: {
+                                stacked: stack,
+                            },
+
+                        }
+
+                        if ( this.chartTitle == 'CASH') { xy.y.suggestedMin = 60 }
+                        else if ( ['WATERFALL','PARENT_WATERFALL','USBD_WATERFALL'].indexOf(this.chartTitle) > -1) {
+                            xy.y.min = Math.floor(Math.min.apply(null,dataList.flat().filter(Boolean))/5)*5
+                        }
+                        else if ( this.chartTitle == 'LCR_ILST' ) { xy.y.min = 100 }
+                        else if ( this.chartTitle == 'PARENT_LIQ_MAIN'  & y1_flag) {
+                            xy.y.min = 65; xy.y.ticks.stepSize = 5;
+                            xy.y1= {
+                                stacked: stack,
+                                position:'right',
+                                // grid line settings
+                                grid: {
+                                  drawOnChartArea: false, // only want the grid lines for one axis to show up
+                                },
+                            };
+                        }
+
+
+                        var dt = $('#date').val()
+                        var hi = new Date(dt.substring(4,6) + '/' + dt.substring(6,8) + '/' + dt.substring(0,4))
+                        var qtr_start = Math.floor(hi.getMonth()/3)
+                        var qtr_start_dt = new Date(hi.getFullYear(),qtr_start*3,1)
+                        var qtr_end_dt = new Date(qtr_start_dt.getFullYear(), qtr_start_dt.getMonth()+3,0)
+                        for(var i =0; i < xaxis.length; i++){
+                            if (xaxis[i] > qtr_end_dt.toISOString().slice(0,10)){qtr_end_index=i-1; break;}
+                        }
+                        var mth_end_dt = new Date(hi.getFullYear(), hi.getMonth()+1,0)
+                        for(var i =0; i <xaxis.length; i++){
+                            if (xaxis[i] > mth_end_dt.toISOString().slice(0,10)){mth_end_index=i-1; break;}
+                        }
+
+                        var annotations = chartDict[key]['annotations']
+                        if (chartDict[key]['addMQEnd']) {
+                            annotations.annotations.qtr = {type: 'line', xMin: qtr_end_index, xMax: qtr_end_index, borderDash: [5,5], borderColor: 'rgb(0, 0, 0)', borderWidth: 2}
+                            annotations.annotations.mth = {type: 'line', xMin: mth_end_index, xMax: mth_end_index, borderDash: [5,5], borderColor: 'rgb(0, 0, 0)', borderWidth: 2}
+                        }
+
+                        if ( ['CASH','LIQ_FORECAST','PARENT_LIQ_MAIN','GMU_CHART_MAIN'].includes(this.chartTitle)){
+
+                            if (['PARENT_LIQ_MAIN','GMU_CHART_MAIN'].includes(this.chartTitle)) {
+                                start = $('#parent_trend_start').val()
+                                end = $('#parent_trend_end').val()
+                            }
+                            else {
+                                start = $('#bana_trend_start').val()
+                                end = $('#bana_trend_end').val()
+                            }
+                            if ( start != '' && end != '' ) {
+
+                                if (new Date(start.substring(5,7) + '/' + start.substring(8,10) + '/' + start.substring(0,4)) >hi) {start_pos=1} else { start_pos=0 }
+                                if (new Date(end.substring(5,7) + '/' + end.substring(8,10) + '/' + end.substring(0,4)) >hi) {end_pos=1} else { end_pos=0 }
+
+                                annotations.annotations.trend = {  type: 'line', xMin: start, xMax: end,
+                                                                    yMin: dictionaryList[start_pos].data[xaxis.indexOf(start)],
+                                                                    yMax: dictionaryList[end_pos].data[xaxis.indexOf(end)],
+                                                                    borderColor: 'rgb(192, 0, 0)', borderDash: [10,10], borderWidth: 2, }
+                            }
+                            else{
+                                if (annotations.annotations.hasOwnProperty('trend')){
+                                    delete annotations.annotations.trend
+                                }
+                            };
+                        }
+
+
+
+                        var myChart = new Chart(ctx, {
+                            type: chartType,
+                            data: {
+                                labels: xaxis,
+                                datasets: dictionaryList
+                            },
+                            options: {
+                                onClick: function(event,elementsAtEvent) {
+                                        var clkPoint = elementsAtEvent;
+                                        var clkIndex = clkPoint[0].index
+                                        var clkLabel = myChart.data.labels[clkIndex]
+                                        var clkDataSet = myChart.data.datasets[clkPoint[0].datasetIndex].label
+                                        if (['PARENT_LIQ_MAIN','GMU_CHART_MAIN'].includes(event.chart.canvas.id)) {
+                                            if ( $('#parent_trend_start').val() != '' && $('#parent_trend_end').val() != '' ) {
+                                                $('#parent_trend_start').val(''); $('#parent_trend_end').val('');
+                                            }
+                                            this.data.datasets[0].pointRadius[clkIndex] = 5
+                                            this.data.datasets[1].pointRadius[clkIndex] = 5
+                                            this.update()
+                                            if ( $('#parent_trend_start').val() == '' ) { $('#parent_trend_start').val(clkLabel) }
+                                            else { $('#parent_trend_end').val(clkLabel) }
+
+                                            if ( $('#parent_trend_start').val() != '' && $('#parent_trend_end').val() != '' ) {
+                                               if (event.chart.canvas.id == 'PARENT_LIQ_MAIN'){
+                                                    parent_forecast_analysis(input_date,false,true) //to show the red line
+                                                    show_parent_analysis_modal(true)
+                                               }
+                                               else {
+                                                    parent_forecast_analysis(input_date,true,false) //to show the red line
+                                                    show_parent_analysis_modal(false)
+                                               }
+
+                                            }
+
+
+                                        }
+                                        else if (['CASH','LIQ_FORECAST'].includes(event.chart.canvas.id)) {
+
+                                            if ( $('#bana_trend_start').val() != '' && $('#bana_trend_end').val() != '' ) {
+                                                $('#bana_trend_start').val(''); $('#bana_trend_end').val('');
+                                            }
+                                            this.data.datasets[0].pointRadius[clkIndex] = 5
+                                            this.data.datasets[1].pointRadius[clkIndex] = 5
+                                            this.update()
+                                            if ( $('#bana_trend_start').val() == '' ) { $('#bana_trend_start').val(clkLabel) }
+                                            else { $('#bana_trend_end').val(clkLabel) }
+
+                                            if ( $('#bana_trend_start').val() != '' && $('#bana_trend_end').val() != '' ) {
+                                               if (event.chart.canvas.id == 'CASH'){
+                                                    update_bana_cash_liq(input_date,true) //to show the red line
+                                                    show_bana_analysis_modal(true)
+                                               }
+                                               else {
+                                                   update_bana_cash_liq(input_date,false) //to show the red line
+                                                   show_bana_analysis_modal(false)
+                                               }
+
+                                            }
+                                        }
+                                    },
+                                plugins: {
+                                    legend: {
+                                        display: displayLegend,
+                                        position: 'bottom',
+                                        labels: {
+                                            font: { size: 10 },
+                                        }
+                                    },
+                                    title: {
+                                        display: true,
+                                        text: titleName
+                                    },
+                                    annotation: annotations,
+                                    tooltip: {
+                                        mode: 'nearest',
+                                        callbacks: {
+                                            label: function(tooltipItem, data) {
+                                                var label = tooltipItem.dataset.label
+                                                if (tooltipItem.chart.canvas.id == 'WATERFALL2') {
+                                                    var value = Math.round((tooltipItem.raw[1]-tooltipItem.raw[0])*10)/10
+                                                    value = value.toString();
+                                                    return label + ': ' + value
+                                                }
+                                                else if (typeof(tooltipItem.raw) == 'object') {
+                                                    var value = tooltipItem.raw[1]-tooltipItem.raw[0]
+                                                    var value = Math.round(value*10)/10
+                                                }
+                                                else {
+                                                    var value = Math.round(tooltipItem.formattedValue*10)/10
+                                                }
+                                                value = value.toString()
+                                                if (label == 'Custom') { return value }
+                                                else { return label + ': ' + value }
+                                            }
+                                         }
+                                    },
+                                },
+                                scales: xy,
+                                animation: false
+                            }
+                        });
+
+                    },
+
+         })
+        }
+    </script>
+</body>
+</html>
